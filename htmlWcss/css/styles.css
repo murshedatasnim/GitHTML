@@ -1,0 +1,61 @@
+
+div{
+  margin: 23px;
+  width: 25%;
+  height: 100px;
+  color: white;
+}
+
+.transition{
+    background: blue ;
+    transition: all 2s linear;
+}
+
+.transition:hover{
+    background: red;
+    transform: translateX(100px);
+}
+
+.annimation{
+    background: green;
+    /* animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: 2; */
+    animation: move 5s infinite;
+    
+}
+
+@keyframes move{
+    25% {
+        transform: translateX(20px);
+        background:crimson;
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(100px);
+        background:rebeccapurple;
+        opacity: 0.25;
+    }
+    75% {
+        transform: translateX(150px);
+        background:darkcyan;
+        opacity: 0.5;
+    }
+    90% {
+        transform: translateX(200px);
+        background:aqua;
+        opacity: 1;
+    }
+}
+h1 {
+    color: grey;
+    text-shadow: 3px 5px 1px red;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background: blue;
+    margin: 20px;
+    box-shadow: 3px 5px 2px green;
+}
